@@ -1,0 +1,109 @@
+.doctor-page {
+    background: #f9fafb;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Permission Box */
+  .permission-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .permission-box button {
+    margin-top: 12px;
+    padding: 12px 20px;
+    background: #0ea5a4;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .permission-box button:hover {
+    background: #0d9488;
+  }
+  
+  /* Records Section */
+  .records-section {
+    margin-bottom: 20px;
+  }
+  
+  .records-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  
+  .record-card {
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .record-card h3 {
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+    color: #1e293b;
+  }
+  
+  .record-card p {
+    color: #475569;
+  }
+  
+  /* Consultation Form */
+  .consultation-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .consultation-form textarea {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    min-height: 80px;
+    font-size: 1rem;
+    resize: vertical;
+  }
+  
+  .consultation-form button {
+    padding: 14px;
+    background: #0ea5a4;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .consultation-form button:hover {
+    background: #0d9488;
+  }
+  
+  /* Documents */
+  .documents-list {
+    font-size: 0.95rem;
+    color: #475569;
+  }
+  

@@ -1,0 +1,58 @@
+/* Simple header styling */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-bottom: 1px solid #e5e7eb;
+}
+.site-header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-header .brand a {
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 20px;
+}
+.site-header .nav {
+  display: flex;
+  gap: 16px;
+}
+.site-header .nav a {
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0.95;
+}
+.site-header .nav a:hover {
+  color: #0ea5a4;
+}
+
+/* Hamburger menu button (used on LandingPage) */
+.menu-button {
+  width: 40px;
+  height: 32px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  background: transparent;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.menu-button .bar {
+  display: block;
+  height: 2px;
+  width: 20px;
+  background: #0f172a;
+  margin: 0 auto;
+}

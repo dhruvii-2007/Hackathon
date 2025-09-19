@@ -1,0 +1,151 @@
+/* ===== Global Reset & Base ===== */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+/* ===== Page Container ===== */
+.records-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* ===== Header ===== */
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  padding: 24px;
+  text-align: center;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* ===== Add Record Section ===== */
+.add-record {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 80px; /* below the header */
+  z-index: 9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.add-record input {
+  flex: 1 1 250px;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-record input:focus {
+  outline: none;
+  border-color: #0ea5a4;
+  box-shadow: 0 0 0 3px rgba(14, 165, 164, 0.2);
+}
+
+.add-record button {
+  padding: 12px 20px;
+  background: #0ea5a4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.add-record button:hover {
+  background: #0d9488;
+  transform: translateY(-2px);
+}
+
+/* ===== Records List ===== */
+.records-list {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ===== Record Card ===== */
+.record-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.record-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.record-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.record-card p {
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+/* ===== Delete Button ===== */
+.record-card button {
+  padding: 10px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.record-card button:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+/* ===== Mobile Responsiveness ===== */
+@media (max-width: 600px) {
+  .add-record {
+    flex-direction: column;
+  }
+  .add-record input,
+  .add-record button {
+    width: 100%;
+  }
+}

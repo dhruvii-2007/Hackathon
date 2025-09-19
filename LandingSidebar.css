@@ -1,0 +1,81 @@
+/* Landing page sidebar */
+.landing-sidebar {
+  width: 240px;
+  background: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  padding: 16px 12px;
+}
+.lsb-inner {
+  position: sticky;
+  top: 64px; /* below header */
+}
+.lsb-section {
+  font-size: 12px;
+  font-weight: 800;
+  color: #64748b;
+  text-transform: uppercase;
+  margin: 12px 8px 8px;
+}
+.lsb-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 8px 8px;
+}
+.lsb-nav a {
+  color: #0f172a;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+.lsb-nav a:hover {
+  background: #f1f5f9;
+}
+
+/* Close button (visible in overlay mode) */
+.lsb-close {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background: transparent;
+  color: #0f172a;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+}
+.lsb-close:hover {
+  background: #e5e7eb;
+}
+.lsb-close:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #0ea5a4 inset;
+}
+
+/* Overlay mode for small screens */
+.landing-sidebar.overlay {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 280px;
+  z-index: 100;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-left: 1px solid #e5e7eb;
+  border-right: none;
+}
+.landing-sidebar.overlay .lsb-inner {
+  position: absolute;
+  top: 0;
+  padding-top: 48px; /* space for close button */
+}
+.landing-sidebar.overlay .lsb-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 101;
+}
